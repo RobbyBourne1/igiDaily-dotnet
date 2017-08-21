@@ -16,12 +16,12 @@ namespace igiDaily_dotnet
             public string Shoot()
             {
                 Console.WriteLine("Firing Machinegun");
-                return Shoot();
+                return "Shoot()";
             }
             public string Action()
             {
                 Console.WriteLine("Reloading Machinegun");
-                return Action();
+                return "Action()";
             }
         }
         public class Sniper : IWeapon
@@ -33,12 +33,12 @@ namespace igiDaily_dotnet
             public string Shoot()
             {
                 Console.WriteLine("Firing Sniper");
-                return Shoot();
+                return "Shoot()";
             }
             public string Action()
             {
                 Console.WriteLine("Aiming Sniper");
-                return Action();
+                return "Action()";
             }
         }
 
@@ -51,12 +51,12 @@ namespace igiDaily_dotnet
             public string Shoot()
             {
                 Console.WriteLine("Healing Soldier");
-                return Shoot();
+                return "Shoot()";
             }
             public string Action()
             {
                 Console.WriteLine("Taking Cover");
-                return Action();
+                return "Action()";
             }
         }
 

@@ -1,3 +1,5 @@
+using System;
+
 namespace igiDaily_dotnet
 {
     public class Medic : Soldier, IWeapon
@@ -14,8 +16,10 @@ namespace igiDaily_dotnet
             return $"My name is {Name} and I am a {Rank}. My Weapon of choice is the {Weapon}.";
         }
 
-        public override void Speak() => throw new System.NotImplementedException(message: "Medic is Here");
-
+        public override void Speak() 
+        {
+           Console.WriteLine("Medic is Here");
+        }
         string IWeapon.Shoot()
         {
             throw new System.NotImplementedException();

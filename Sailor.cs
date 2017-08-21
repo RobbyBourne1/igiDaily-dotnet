@@ -1,3 +1,5 @@
+using System;
+
 namespace igiDaily_dotnet
 {
     public class Sailor : Soldier, IWeapon
@@ -16,7 +18,7 @@ namespace igiDaily_dotnet
 
         public override void Speak()
         {
-            throw new System.NotImplementedException(message :"All Aboard");
+            Console.WriteLine("All Aboard");
         }
 
         string IWeapon.Shoot()
