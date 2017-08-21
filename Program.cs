@@ -8,8 +8,13 @@ namespace igiDaily_dotnet
         {
             var Medic = new Medic("Mike", "Kings Guard", 1234);
 
-            var other =  new Medic("Paul", "capt", 123455, new MachineGun());
+            var Sailor =  new Sailor("Paul", "capt", 123455);
+            var Infantry = new Infantry("Rodger", "General", 5678);
+            
             Console.WriteLine(Medic);
+            Console.WriteLine(Sailor);
+            Console.WriteLine(Infantry);
+
         }
     }
 }
