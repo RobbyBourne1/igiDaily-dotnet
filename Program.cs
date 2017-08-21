@@ -6,7 +6,8 @@ namespace igiDaily_dotnet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var Medic = new Medic("Mike", "Kings Guard", 1234);
+            Console.WriteLine(Medic);
         }
     }
 }

@@ -7,7 +7,6 @@ namespace igiDaily_dotnet
         void Shoot();
         void Reload(); 
     }
-
         public class MachineGun : IWeapon
         {        
             int RoundsPerSecond { get; set; }
@@ -23,7 +22,6 @@ namespace igiDaily_dotnet
                 Console.WriteLine("Reloading Machinegun");
             }
         }
-
         public class Sniper : IWeapon
         {
             int RoundsPerSecond { get; set; }

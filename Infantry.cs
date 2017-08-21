@@ -1,6 +1,7 @@
 namespace igiDaily_dotnet
 {
-    public class Infantry : IMachinegun, IPistol, ISniper
-    {
+    // public class Infantry : IMachinegun, IPistol, ISniper
+    // {
 
-    }
+    // }
+}

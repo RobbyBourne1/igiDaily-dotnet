@@ -29,7 +29,7 @@ namespace igiDaily_dotnet
 
         public void March()
         {
-            Console.WriteLine("Left...Left..Left, Right, Left")
+            Console.WriteLine("Left...Left..Left, Right, Left");
         }
 
     }

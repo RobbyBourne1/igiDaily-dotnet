@@ -21,3 +21,4 @@ namespace igiDaily_dotnet
             throw new System.NotImplementedException("Medic is Here");
         }
     }
+}
