@@ -1,10 +1,10 @@
 namespace igiDaily_dotnet
 {
-    interface ISniper
+    interface IPistol
     {
         int RoundsPerSecond { get; set; }
         bool Automatic { get; set; }
-        double Type { get; set; }
+        string Type { get; set; }
 
         void Shoot();
         void Reload(); 
