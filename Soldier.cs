@@ -8,11 +8,14 @@ namespace igiDaily_dotnet
         public string Rank { get; set; }
         public int SerialNumber { get; set; }
 
-        public Soldier(string name, string rank, int serialNumber)
+        public IWeapon Weapon {get;set;}
+
+        public Soldier(string name, string rank, int serialNumber, IWeapon weapon)
         {
             Name = name;
             Rank = rank;
             SerialNumber = serialNumber;
+            Weapon = weapon;
         }
 
         public abstract void Speak();

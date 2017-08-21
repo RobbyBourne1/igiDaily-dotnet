@@ -4,8 +4,8 @@ namespace igiDaily_dotnet
 {
     public interface IWeapon
     {
-        void Shoot();
-        void Reload(); 
+        string Shoot();
+        string Action(); 
     }
         public class MachineGun : IWeapon
         {        
@@ -13,13 +13,15 @@ namespace igiDaily_dotnet
             bool Automatic { get; set; }
             string Type { get; set; }
 
-            public void Shoot()
+            public string Shoot()
             {
                 Console.WriteLine("Firing Machinegun");
+                return Shoot();
             }
-            public void Reload()
+            public string Action()
             {
                 Console.WriteLine("Reloading Machinegun");
+                return Action();
             }
         }
         public class Sniper : IWeapon
@@ -28,13 +30,15 @@ namespace igiDaily_dotnet
             bool Automatic { get; set; }
             string Type { get; set; }
 
-            public void Shoot()
+            public string Shoot()
             {
                 Console.WriteLine("Firing Sniper");
+                return Shoot();
             }
-            public void Reload()
+            public string Action()
             {
-                Console.WriteLine("Reloading Sniper");
+                Console.WriteLine("Aiming Sniper");
+                return Action();
             }
         }
 
@@ -44,13 +48,15 @@ namespace igiDaily_dotnet
             bool Automatic { get; set; }
             string Type { get; set; }
 
-            public void Shoot()
+            public string Shoot()
             {
                 Console.WriteLine("Healing Soldier");
+                return Shoot();
             }
-            public void Reload()
+            public string Action()
             {
                 Console.WriteLine("Taking Cover");
+                return Action();
             }
         }
 
